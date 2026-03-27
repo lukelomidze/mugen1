@@ -1,0 +1,8 @@
+.\external\script\start.lua:2737: attempt to call a non-function object
+stack traceback:
+	.\external\script\start.lua:2737: in function 'f_selectMenu'
+	.\external\script\start.lua:2087: in function 'f_selectScreen'
+	.\external\script\start.lua:1421: in function 'f'
+	external/script/main.lua:3106: in function 'loop'
+	external/script/main.lua:4157: in main chunk
+	[G]: ?

@@ -1,0 +1,43 @@
+;****************************************************************************************;
+;******************* Vergil Was Created By Planeptune and Edited By BloodBathAnime *************;
+;*****************   https://www.youtube.com/channel/UCQGJf-icjsHk4jdVqMsPz5A *************;
+;****************************************************************************************;
+;╔═╦╗╔╦╗╔═╦═╦╦╦╦╗╔═╗
+;║╚╣║║║╚╣╚╣╔╣╔╣║╚╣═╣ 
+;╠╗║╚╝║║╠╗║╚╣║║║║║═╣
+;╚═╩══╩═╩═╩═╩╝╚╩═╩═╝
+;Credits 
+;Rivelio - Effects and Code For Particles
+;Baby Desu - Effets 
+;FreshPrince24 - Jump Cancel 
+;Planeptune - Original Character
+;Kiro Mikado - Original Edit of Vergil
+;Teachers - FreshPrince24 and Kiro Mikado
+;Ai Support - Adventurer
+
+
+[Info]
+name="Son of Sparda Vergil"
+displayname="Vergil"
+versiondate= 06/06/2025
+mugenversion=1.1
+author="BloodBathAnime and Kiro Mikado" ;Edit DirectX by Dark Night 
+pal.defaults=1,2
+[Files]
+sprite=Vergil.sff
+sound=SOUNDS.snd
+anim=Vergil.air
+cmd=Vergil.cmd
+cns=Vergil.cns
+st=Vergil.cns
+stcommon=common1.cns
+st1=AI.cns
+st2 = Helpers and Extras.cns
+pal1=Vergil.act
+pal2=Vergil2.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;Sprites by Leanboox
+
+;Vergil From Devil May Cry

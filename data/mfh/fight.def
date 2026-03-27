@@ -1,0 +1,739 @@
+[info]
+name = "MUGEN Fighting Heroes"
+author = "Devon"
+
+;-------------------------------------------------------------------
+[Files]
+sff= 		fight.sff
+snd= 		fight.snd
+font1= 		mfh/font/aero48.def
+font2= 		mfh/font/power.def
+font3= 		mfh/font/evogria20.def
+font4= 		mfh/font/evogria10.def
+font5= 		mfh/font/combo.def
+font6= 		mfh/font/menu.def
+font7 =     mfh/font/MBTL_FightName.def
+fightfx.sff= 	fightfx.sff
+fightfx.air= 	fightfx.air
+common.snd= 	common.snd
+
+;-------------------------------------------------------------------
+[FightFx]
+scale= 	4
+
+;-------------------------------------------------------------------
+[Lifebar]
+p1.pos= 		640,0
+p1.bg0.spr= 	0,0
+p1.mid.anim= 	3
+p1.mid.offset= 	-35,35
+p1.front.anim= 	1
+p1.front.offset= 	-35,35
+p1.range.x= 	-35,-467
+p2.pos= 		640,0
+p2.bg0.spr= 	0,1
+p2.mid.anim= 	3
+p2.mid.offset= 	471,35
+p2.front.anim= 	2
+p2.front.offset= 	471,35
+p2.range.x= 	39,471
+
+[Simul Lifebar]
+p1.pos= 		640,0
+p1.bg0.spr= 	0,0
+p1.bg1.spr= 	0,2
+p1.mid.anim= 	8
+p1.mid.offset= 	-35,35
+p1.front.anim= 	4
+p1.front.offset= 	-35,35
+p1.range.x= 	-35,-465
+p2.pos= 		640,0
+p2.bg0.spr= 	0,1
+p2.bg1.spr= 	0,2
+p2.bg1.facing= 	-1
+p2.mid.anim= 	8
+p2.mid.offset= 	471,35
+p2.front.anim= 	5
+p2.front.offset= 	471,35
+p2.range.x= 	41,471
+p3.pos= 		640,0
+p3.mid.anim= 	9
+p3.mid.offset= 	-37,47
+p3.front.anim= 	6
+p3.front.offset= 	-37,47
+p3.range.x= 	-37,-467
+p4.pos= 		640,0
+p4.mid.anim= 	9
+p4.mid.offset= 	469,47
+p4.front.anim= 	7
+p4.front.offset= 	469,47
+p4.range.x= 	39,469
+
+[Turns Lifebar]
+p1.pos= 		640,0
+p1.bg0.spr= 	0,0
+p1.bg1.spr= 	0,3
+p1.mid.anim= 	3
+p1.mid.offset= 	-35,35
+p1.front.anim= 	1
+p1.front.offset= 	-35,35
+p1.range.x= 	-35,-467
+p2.pos= 		640,0
+p2.bg0.spr= 	0,1
+p2.bg1.spr= 	0,4
+p2.mid.anim= 	3
+p2.mid.offset= 	471,35
+p2.front.anim= 	2
+p2.front.offset= 	471,35
+p2.range.x= 	39,471
+
+;-------------------------------------------------------------------
+[Powerbar]
+p1.pos= 		601,60
+p1.bg0.spr = 1212,0
+p1.bg0.layerno = 1
+p1.bg1.spr = 1213,0
+p1.bg1.layerno = 1
+p1.front.spr= 	1212,1
+p1.front.layerno = 1
+p1.range.x= 	0,-557
+p1.counter.offset= 	-200,15
+p1.counter.font= 	-1
+p1.value.text = %p Power%
+p1.value.font = 7,0,1
+p1.value.offset= 	-550,602
+p1.value.layerno= 1
+p2.pos= 		601,60
+p2.front.spr= 	1212,2
+p2.range.x= 	0,637
+p2.front.layerno = 1
+p2.counter.offset= 	197,15
+p2.counter.font= 	-1
+level1.snd= 	21,0
+level2.snd= 	21,0
+level3.snd= 	21,0
+p2.value.text = %p Power%
+p2.value.font = 7,0,-1
+p2.value.offset= 	625,602
+p2.value.layerno= 1
+
+;[Powerbar]
+;p1.pos= 		601,60
+;p1.bg0.spr = 1212,0
+;p1.bg0.layerno = 1
+;p1.bg1.spr = 1213,0
+;p1.bg1.layerno = 1
+;p1.front.spr= 	5,0
+;p1.front.offset= 	0,0
+;p1.range.x= 	0,-197
+;p1.counter.offset= 	-200,15
+;p1.counter.font= 	2,0,-1
+;p2.pos= 		677,60
+;p2.front.spr= 	5,1
+;p2.front.offset= 	0,0
+;p2.range.x= 	0,197
+;p2.counter.offset= 	197,15
+;p2.counter.font= 	2,0,1
+;level1.snd= 	21,0
+;level2.snd= 	21,0
+;level3.snd= 	21,0
+
+;-------------------------------------------------------------------
+[Face]
+p1.pos= 		64,30
+p1.face.spr= 	9000,0
+p1.face.scale= 	.50,.50
+p1.face.facing = 1
+p2.pos= 		1190,30
+p2.face.spr= 	9000,0
+p2.face.scale= 	.50,.50
+p2.face.facing = -1
+
+[Simul Face]
+p1.pos= 		28,35
+p1.face.spr= 	9000,5
+p1.face.scale= 	.25,.25
+p2.pos= 		1256,35
+p2.face.spr= 	9000,6
+p2.face.scale= 	.25,.25
+p3.pos= 		24,57
+p3.face.spr= 	9000,5
+p3.face.scale= 	.25,.25
+p4.pos= 		1252,57
+p4.face.spr= 	9000,6
+p4.face.scale= 	.25,.25
+
+[Turns Face]
+p1.pos= 			24,35
+p1.face.spr= 		9000,3
+p1.face.scale= 		.25,.25
+p1.teammate.pos= 		42,98
+p1.teammate.spacing= 	57,0
+p1.teammate.bg0.spr= 	0,5
+p1.teammate.ko.anim= 	10
+p1.teammate.face.spr= 	9000,7
+p1.teammate.face.scale= 	.25,.25
+p2.pos= 			1256,35
+p2.face.spr= 		9000,4
+p2.face.scale= 		.25,.25
+p2.teammate.pos= 		1229,98
+p2.teammate.spacing= 	-57,0
+p2.teammate.bg0.spr= 	0,6
+p2.teammate.ko.anim= 	10
+p2.teammate.ko.offset= 	-60,0
+p2.teammate.face.spr= 	9000,7
+p2.teammate.face.offset= 	-60,0
+p2.teammate.face.scale= 	.25,.25
+
+;-------------------------------------------------------------------
+[Name]
+p1.pos= 		168,76
+p1.name.font= 	3,0,1
+p2.pos= 		1105,76
+p2.name.font= 	3,0,-1
+
+[Simul Name]
+p1.pos= 		170,67
+p1.name.font= 	4,0,1
+p2.pos= 		1106,67
+p2.name.font= 	4,0,-1
+p3.pos= 		168,76
+p3.name.font= 	4,0,1
+p4.pos= 		1104,76
+p4.name.font= 	4,0,-1
+
+[Turns Name]
+p1.pos= 		168,76
+p1.name.font= 	3,0,1
+p2.pos= 		1105,76
+p2.name.font= 	3,0,-1
+
+;-------------------------------------------------------------------
+[Time]
+pos= 		640,68
+counter.font= 	1,0,0
+framespercount= 	60
+
+;-------------------------------------------------------------------
+[Combo]
+team1.pos= 		30,210
+team1.start.x= 		-240
+team1.counter.font= 	5,0,1
+team1.counter.shake= 	1
+team1.text.text= 		"A"
+team1.text.font= 		5,0,1
+team1.text.offset= 		12,0
+team1.displaytime= 		90
+team2.pos= 		1250,210
+team2.start.x= 		1520
+team2.counter.font= 	5,0,-1
+team2.counter.shake= 	1
+team2.text.text= 		"A"
+team2.text.font= 		5,0,-1
+team2.text.offset= 		12,0
+team2.displaytime= 		90
+
+;-------------------------------------------------------------------
+[Round]
+match.wins= 	2
+match.maxdrawgames= -1
+start.waittime= 	30
+pos= 		640,0
+round.time= 	0
+round.default.font= -1,0, 0
+round.default.text= ""
+round1.snd= 	0,1
+round2.snd= 	0,2
+round3.snd= 	0,3
+round4.snd= 	0,4
+round5.snd= 	0,5
+round6.snd= 	0,6
+round7.snd= 	0,7
+round8.snd= 	0,8
+round9.snd= 	0,9
+round.sndtime= 	0
+round1.anim= 	11 
+round2.anim= 	12
+round3.anim= 	13
+round4.anim= 	14
+round5.anim= 	15
+round6.anim= 	16
+round7.anim= 	17
+round8.anim= 	18
+round9.anim= 	19
+fight.time= 	60
+fight.offset= 	0,360
+fight.anim= 	22
+fight.snd= 	1,0
+fight.sndtime= 	60
+ctrl.time= 	120
+KO.time= 		0
+KO.offset= 	0,360
+KO.anim= 		23
+KO.snd= 		2,0
+DKO.offset=	0,360
+DKO.anim= 	24
+DKO.snd= 		2,1
+TO.offset= 	0,360
+TO.anim= 		25
+TO.snd= 		2,2
+KO.sndtime= 	0
+slow.time= 	60
+over.waittime= 	45
+over.hittime= 	45
+over.wintime= 	45
+over.time= 	300
+win.time= 	60
+win.offset= 	0,0
+win.anim= 	20
+win.displaytime= 	540
+win2.offset= 	0,0
+win2.anim= 	20
+win2.displaytime= 	540
+draw.offset= 	0,0
+draw.anim= 	21
+draw.displaytime= 	540
+
+;-------------------------------------------------------------------
+[WinIcon]
+p1.pos= 		610,5
+p2.pos= 		706,5
+p1.bg0.spr= 	0,8
+p2.bg0.spr= 	0,8
+p1.iconoffset= 	-32,0  
+p2.iconoffset= 	32,0
+p1.counter.font= 	-1,0,0
+p2.counter.font= 	-1,0,0
+p1.n.spr= 	0,9
+p2.n.spr= 	0,9
+p1.s.spr= 	0,9
+p2.s.spr= 	0,9
+p1.h.spr= 	0,9
+p2.h.spr= 	0,9
+p1.throw.spr= 	0,9
+p2.throw.spr= 	0,9
+p1.c.spr= 	0,9
+p2.c.spr= 	0,9
+p1.t.spr= 	0,9
+p2.t.spr= 	0,9
+p1.suicide.spr= 	0,9
+p2.suicide.spr= 	0,9
+p1.teammate.spr= 	0,9
+p2.teammate.spr= 	0,9
+p1.perfect.spr= 	-1,0
+p2.perfect.spr= 	-1,0
+useiconupto= 	9999
+
+;-------------------------------------------------------------------
+;p1 Lifebar anim
+[Begin Action 1]
+1,0,0,0,30
+1,1,0,0,4
+1,2,0,0,4
+1,3,0,0,4
+1,4,0,0,3
+1,5,0,0,3
+1,6,0,0,3
+1,7,0,0,2
+1,8,0,0,2
+1,9,0,0,2
+1,10,0,0,1
+1,11,0,0,1
+1,12,0,0,1
+
+;p2 Lifebar anim
+[Begin Action 2]
+1,0,0,0,30
+1,12,0,0,4
+1,11,0,0,4
+1,10,0,0,4
+1,9,0,0,3
+1,8,0,0,3
+1,7,0,0,3
+1,6,0,0,2
+1,5,0,0,2
+1,4,0,0,2
+1,3,0,0,1
+1,2,0,0,1
+1,1,0,0,1
+
+;Mid Lifebar anim
+[Begin Action 3]
+4,0,0,0,29,,AS256D0
+interpolate blend
+4,0,0,0,1,,AS128D128
+4,0,0,0,29,,AS128D128
+interpolate blend
+4,0,0,0,1,,AS256D0
+
+
+;p1 Lifebar simul.top
+[Begin Action 4]
+2,0,0,0,30
+2,1,0,0,4
+2,2,0,0,4
+2,3,0,0,4
+2,4,0,0,3
+2,5,0,0,3
+2,6,0,0,3
+2,7,0,0,2
+2,8,0,0,2
+2,9,0,0,2
+2,10,0,0,1
+2,11,0,0,1
+2,12,0,0,1
+
+;p2 Lifebar simul.top
+[Begin Action 5]
+2,0,0,0,30
+2,12,0,0,4
+2,11,0,0,4
+2,10,0,0,4
+2,9,0,0,3
+2,8,0,0,3
+2,7,0,0,3
+2,6,0,0,2
+2,5,0,0,2
+2,4,0,0,2
+2,3,0,0,1
+2,2,0,0,1
+2,1,0,0,1
+
+;p3 Lifebar simul.bottom
+[Begin Action 6]
+2,0, 0,0, 30
+2,1,0,0,4
+2,2,0,0,4
+2,3,0,0,4
+2,4,0,0,3
+2,5,0,0,3
+2,6,0,0,3
+2,7,0,0,2
+2,8,0,0,2
+2,9,0,0,2
+2,10,0,0,1
+2,11,0,0,1
+2,12,0,0,1
+
+;p4 Lifebar simul.bottom
+[Begin Action 7]
+2,0,0,0,30
+2,12,0,0,4
+2,11,0,0,4
+2,10,0,0,4
+2,9,0,0,3
+2,8,0,0,3
+2,7,0,0,3
+2,6,0,0,2
+2,5,0,0,2
+2,4,0,0,2
+2,3,0,0,1
+2,2,0,0,1
+2,1,0,0,1
+
+;Mid Lifebar top.simul
+[Begin Action 8]
+4,1,0,0,29,,AS256D0
+interpolate blend
+4,1,0,0,1,,AS128D128
+4,1,0,0,29,,AS128D128
+interpolate blend
+4,1,0,0,1,,AS256D0
+
+;Mid Lifebar bottom.simul
+[Begin Action 9]
+4,2,0,0,29,,AS256D0
+interpolate blend
+4,2,0,0,1,,AS128D128
+4,2,0,0,29,,AS128D128
+interpolate blend
+4,2,0,0,1,,AS256D0
+
+;KO Pulse
+[Begin Action 10]
+0,7,0,0,119,,AS256D0
+interpolate blend
+0,7,0,0,1,,AS128D128
+0,7,0,0,14,,AS128D128
+interpolate blend
+0,7,0,0,1,,AS256D0
+
+;Round 1
+[Begin Action 11]
+11,0, 1,-49, 30, , AS0D256
+interpolate offset
+interpolate blend
+11,0,0,0,3,,AS256D0
+11,1,0,0,3
+11,2,0,0,3
+11,3,0,0,3
+11,4,0,0,3
+11,5,0,0,3
+11,6,0,0,3
+11,7,0,0,3
+11,8,0,0,3
+11,9,0,0,3
+11,10,0,0,3
+11,11,0,0,57
+11,11,0,0,30,,AS256D0
+interpolate blend
+11,11,0,0,1,,AS0D256
+
+;Round 2
+[Begin Action 12]
+12,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+12,0,0,0,3,,AS256D0
+12,1,0,0,3
+12,2,0,0,3
+12,3,0,0,3
+12,4,0,0,3
+12,5,0,0,3
+12,6,0,0,3
+12,7,0,0,3
+12,8,0,0,3
+12,9,0,0,3
+12,10,0,0,3
+12,11,0,0,57
+12,11,0,0,30,,AS256D0
+interpolate blend
+12,11,0,0,1,,AS0D256
+
+;Round 3
+[Begin Action 13]
+13,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+13,0,0,0,3,,AS256D0
+13,1,0,0,3
+13,2,0,0,3
+13,3,0,0,3
+13,4,0,0,3
+13,5,0,0,3
+13,6,0,0,3
+13,7,0,0,3
+13,8,0,0,3
+13,9,0,0,3
+13,10,0,0,3
+13,11,0,0,3
+13,12,0,0,54
+13,12,0,0,30,,AS256D0
+interpolate blend
+13,12,0,0,1,,AS0D256
+
+;Round 4
+[Begin Action 14]
+14,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+14,0,0,0,3,,AS256D0
+14,1,0,0,3
+14,2,0,0,3
+14,3,0,0,3
+14,4,0,0,3
+14,5,0,0,3
+14,6,0,0,3
+14,7,0,0,3
+14,8,0,0,3
+14,9,0,0,3
+14,10,0,0,3
+14,11,0,0,57
+14,11,0,0,30,,AS256D0
+interpolate blend
+14,11,0,0,1,,AS0D256
+
+;Round 5
+[Begin Action 15]
+15,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+15,0,0,0,3,,AS256D0
+15,1,0,0,3
+15,2,0,0,3
+15,3,0,0,3
+15,4,0,0,3
+15,5,0,0,3
+15,6,0,0,3
+15,7,0,0,3
+15,8,0,0,3
+15,9,0,0,3
+15,10,0,0,3
+15,11,0,0,57
+15,11,0,0,30,,AS256D0
+interpolate blend
+15,11,0,0,1,,AS0D256
+
+;Round 6
+[Begin Action 16]
+16,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+16,0,0,0,3,,AS256D0
+16,1,0,0,3
+16,2,0,0,3
+16,3,0,0,3
+16,4,0,0,3
+16,5,0,0,3
+16,6,0,0,3
+16,7,0,0,3
+16,8,0,0,3
+16,9,0,0,3
+16,10,0,0,60
+16,10,0,0,30,,AS256D0
+interpolate blend
+16,10,0,0,1,,AS0D256
+
+;Round 7
+[Begin Action 17]
+17,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+17,0,0,0,3,,AS256D0
+17,1,0,0,3
+17,2,0,0,3
+17,3,0,0,3
+17,4,0,0,3
+17,5,0,0,3
+17,6,0,0,3
+17,7,0,0,3
+17,8,0,0,3
+17,9,0,0,3
+17,10,0,0,3
+17,11,0,0,3
+17,12,0,0,54
+17,12,0,0,30,,AS256D0
+interpolate blend
+17,12,0,0,1,,AS0D256
+
+;Round 8
+[Begin Action 18]
+18,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+18,0,0,0,3,,AS256D0
+18,1,0,0,3
+18,2,0,0,3
+18,3,0,0,3
+18,4,0,0,3
+18,5,0,0,3
+18,6,0,0,3
+18,7,0,0,3
+18,8,0,0,3
+18,9,0,0,3
+18,10,0,0,3
+18,11,0,0,3
+18,12,0,0,54
+18,12,0,0,30,,AS256D0
+interpolate blend
+18,12,0,0,1,,AS0D256
+
+;Round 9
+[Begin Action 19]
+19,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+19,0,0,0,3,,AS256D0
+19,1,0,0,3
+19,2,0,0,3
+19,3,0,0,3
+19,4,0,0,3
+19,5,0,0,3
+19,6,0,0,3
+19,7,0,0,3
+19,8,0,0,3
+19,9,0,0,3
+19,10,0,0,3
+19,11,0,0,57
+19,11,0,0,30,,AS256D0
+interpolate blend
+19,11,0,0,1,,AS0D256
+
+;Winner
+[Begin Action 20]
+7,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+7,0,0,0,3,,AS256D0
+7,1,0,0,3
+7,2,0,0,3
+7,3,0,0,3
+7,4,0,0,3
+7,5,0,0,3
+7,6,0,0,3
+7,7,0,0,3
+7,8,0,0,3
+loopstart
+7,9,0,0,3
+7,10,0,0,3
+7,11,0,0,3
+7,12,0,0,3
+7,13,0,0,3
+7,14,0,0,3
+7,15,0,0,3
+7,16,0,0,3
+
+;Draw
+[Begin Action 21]
+8,0,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+8,0,0,0,3,,AS256D0
+8,1,0,0,3
+8,2,0,0,3
+8,3,0,0,3
+8,4,0,0,3
+8,5,0,0,3
+8,6,0,0,3
+loopstart
+8,7,0,0,3
+8,8,0,0,3
+8,9,0,0,3
+8,10,0,0,3
+8,11,0,0,3
+8,12,0,0,3
+8,13,0,0,3
+
+;Fight
+[Begin Action 22]
+6,0,0,0,15,,AS0D256,.25,.25
+interpolate blend
+interpolate scale
+6,0,0,0,30,,AS256D0,1,1
+6,0,0,0,30,,AS256D0,1,1
+interpolate blend
+interpolate scale
+6,0,0,0,1,,AS0D256,10,10
+
+;KO
+[Begin Action 23]
+6,1,0,0,15,,AS0D256,.25,.25
+interpolate blend
+interpolate scale
+6,1,0,0,30,,AS256D0,1,1
+6,1,0,0,30,,AS256D0,1,1
+interpolate blend
+interpolate scale
+6,1,0,0,1,,AS0D256,10,10
+
+;Double KO
+[Begin Action 24]
+6,2,0,0,15,,AS0D256,.25,.25
+interpolate blend
+interpolate scale
+6,2,0,0,30,,AS256D0,1,1
+6,2,0,0,30,,AS256D0,1,1
+interpolate blend
+interpolate scale
+6,2,0,0,1,,AS0D256,10,10
+
+;Time Over
+[Begin Action 25]
+6,3,0,0,15,,AS0D256,.25,.25
+interpolate blend
+interpolate scale
+6,3,0,0,30,,AS256D0,1,1
+6,3,0,0,30,,AS256D0,1,1
+interpolate blend
+interpolate scale
+6,3,0,0,1,,AS0D256,10,10

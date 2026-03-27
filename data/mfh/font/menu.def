@@ -1,0 +1,14 @@
+[info]
+name = "menu"
+author = "devon"
+
+[FNT v2]
+fntversion = 2,00
+name = "menu"
+
+[Def]
+Type = bitmap
+Size = 1280,720
+Spacing = 0,0
+Offset = 0,0
+File = menu.sff

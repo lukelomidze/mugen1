@@ -1,0 +1,51 @@
+[Info]
+name = "MUGEN Fighting Heroes"
+author = "Devon"
+localcoord = 1280,720
+
+[SceneDef]
+spr = start.sff
+
+;------------------------------------
+[Scene 0]
+; Fade
+fadein.time = 30
+fadeout.time = 60
+bg.name = BG0
+end.time = 99999999999999
+
+[BG0Def]
+
+[BG0 BG]
+type = normal
+spriteno = 0,0
+tile = 1,1
+
+[BG0 PressAnyButton]
+type = anim
+actionno = 1
+start -640,0
+
+[BG0 Logo]
+type = anim
+actionno = 2
+start = 0,200
+
+;press any button
+[begin action 1]
+0,1, 0,0, 120
+0,1, 0,0, 15, ,AS256D0
+interpolate blend
+0,1, 0,0, 120, ,AS0D256
+0,1, 0,0, 15, ,AS0D256
+interpolate blend
+0,1, 0,0, 120, ,AS256D0
+
+;Logo Pulse
+[Begin Action 2]
+0,2,0,0,59,,,1,1
+interpolate scale
+0,2,0,0,1,,,.98,.98
+0,2,0,0,59,,,.98,.98
+interpolate scale
+0,2,0,0,1,,,1,1

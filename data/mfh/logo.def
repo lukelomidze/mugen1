@@ -1,0 +1,43 @@
+[Info]
+name = "MUGEN Fighting Heroes"
+author = "Devon"
+localcoord = 1280,720
+
+[SceneDef]
+spr = logo.sff
+
+;------------------------------------
+[Scene 0]
+; Fade
+fadein.time = 60
+fadeout.time = 60
+; Screen color
+clearcolor = 0,0,0
+; Overlay Anims (from 0 to 9)
+layerall.pos = 0,0 ;Default position for all layers
+layer0.anim =  0       ;Anim action number
+; Total time
+end.time = 240
+
+[Scene 1]
+; Fade
+fadein.time = 60
+fadeout.time = 60
+; Screen color
+clearcolor = 0,0,0
+; Overlay Anims (from 0 to 9)
+layerall.pos = 0,0 ;Default position for all layers
+layer0.anim =  1       ;Anim action number
+bgm = ../../sound/intro.mp3
+bgm.loop = 0
+; Total time
+end.time = 240
+
+
+;------------------------------------
+;Elecbyte
+[Begin Action 0]
+0,0, 0,0, -1
+;President Devon
+[Begin Action 1]
+0,1, 0,0, -1

@@ -1,0 +1,17 @@
+charcol.3 = 0
+startup.load = 1
+opt.tooltips = 1
+opt.dropmode = 0
+opt.alwaysbackup = 1
+mugen.exe = C:\Users\TheOneTrueSen\Desktop\Jump Force (IKEMEN)\Ikemen_GO.exe
+mugen.hires = 0
+opts.local = 1
+opt.animhide = 1
+opt.showempty = 1
+opt.zoom = 1.2
+vselect.version = 1.3.10.2
+opt.width = 1959
+opt.height = 1104
+opt.top = 7
+opt.left = 96
+opt.maximize = 1

@@ -1,0 +1,32 @@
+[Select Info]
+paletteselect ;0 - Palette select disabled. 1 - Initial selected palette corresponds to key pressed(a = 1, b = 2). 2 - Initial selected palette corresponds to key pressed + keymap (a = 4, x = 1 on kfm). 3 - Initial selected palette is 1. Defaults to 0
+
+;If not called will not display palette number
+p<1/2>.palette.offset ;Offset for palette number display
+p<1/2>.palette.font ;Font for palette number display
+p<1/2>.palette.size ;Size for palette number display
+
+;If not called will display p<1/2>.palette... info
+p<1/2>.member<1-4>.palette.offset ;Offset for palette number display, for specific member of team
+p<1/2>.member<1-4>.palette.font ;Font for palette number display, for specific member of team
+p<1/2>.member<1-4>.palette.size ;Size for palette number display, for specific member of team
+
+;Text to draw with the palette numbers
+p<1/2>.palette.text.text
+p<1/2>.palette.text.offset
+p<1/2>.palette.text.font
+p<1/2>.palette.text.scale
+
+palette.move.snd ;Sound to play when changing palettes
+palette.done.snd ;Sound to play when selecting palette to use
+palette.back.snd ;Sound to play when backing out from palette select menu
+
+;keybindings, default to F, B, a, b, c, respectively
+p1.palette.next.key 
+p1.palette.previous.key 
+p1.palette.accept.key 
+p1.palette.back.key 
+p1.palette.random.key 
+
+[VS Screen]
+enablepalettes ;Set to 1 to enable palettes to be applies on versus screen

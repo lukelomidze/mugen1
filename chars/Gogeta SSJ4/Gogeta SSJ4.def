@@ -1,0 +1,37 @@
+[Info]
+name="Gogeta SSJ4"
+displayname="Gogeta SSJ4"
+versiondate=08/04/2023
+mugenversion=1.1
+author="Micheal22"
+pal.defaults=1,2,3,4,5,6
+
+[Files]
+sprite = Gogeta SSJ4.sff
+sound = Gogeta SSJ4.snd
+anim = Gogeta SSJ4.air
+cmd = Gogeta SSJ4.cmd
+cns = Gogeta SSJ4.cns
+stcommon = common1.dll
+st = Gogeta SSJ4.cns
+st1 = AI.dat
+st2 = Skills.cns
+st3 = Ultimate.cns
+st4 = Misc.cns
+pal1 = 1.act
+pal2 = 1.act
+pal3 = 1.act
+pal4 = 1.act
+pal5 = 1.act
+pal6 = 1.act
+pal7 = 1.act
+pal8 = 1.act
+pal9 = 1.act
+pal10 = 1.act
+pal11 = 1.act
+pal12 = 1.act
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

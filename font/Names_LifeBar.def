@@ -1,0 +1,16 @@
+[FNT v2]
+fntversion = 2,00
+name = "Names"
+author = "Yo :V"
+
+[Def]
+
+Type = truetype
+Size = 0,20
+Spacing = 1,1
+Offset = 0,0
+File = Names.ttf
+Blend = 1
+
+; Note: All units are in pixels A.
+; Text rendered with truetype fonts may be ASCII or UTF-8 C

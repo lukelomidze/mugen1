@@ -1,0 +1,806 @@
+[Info]
+name= 		"MUGEN Fighting Heroes"
+author= 		"Devon"
+versiondate= 	04,23,2019
+mugenversion= 	1.1
+localcoord= 	1280,720
+
+;-------------------------------------------------------------------
+[Files]
+spr= 		system.sff
+snd= 		system.snd
+logo.storyboard= 	logo.def
+intro.storyboard= 	start.def
+select= 		select.def
+fight= 		fight.def
+font1= 		font/menu.def
+font2= 		font/evogria24.def
+font3= 		font/mode.def
+font4= 		font/teamp1.def
+font5= 		font/teamp2.def
+font6= 		font/evogria60.def
+font7= 		font/evogria36.def
+font8=		font/evogria30.def
+
+;-------------------------------------------------------------------
+[Music]
+title.bgm= 		sound/menu.mp3
+title.bgm.volume= 		100
+title.bgm.loop= 		1
+title.bgm.loopstart= 	434203
+title.bgm.loopend= 		2974325
+select.bgm= 		sound/select.mp3
+select.bgm.volume= 		100
+select.bgm.loop= 		1
+select.bgm.loopstart= 	127864
+select.bgm.loopend= 	6116166
+vs.bgm= 			sound/versus.mp3
+vs.bgm.volume= 		100
+vs.bgm.loop= 		0
+victory.bgm= 		sound/victory.mp3
+victory.bgm.volume= 	100
+victory.bgm.loop= 		0
+
+;-------------------------------------------------------------------
+[Title Info]
+fadein.time= 		0
+fadeout.time= 		10
+menu.pos= 		1279,719
+menu.item.font= 		-1,0,0
+menu.item.active.font= 	1,0,-1
+menu.item.spacing= 		0,0
+menu.itemname.arcade= 	"0"
+menu.itemname.versus= 	""
+menu.itemname.teamarcade= 	"1"
+menu.itemname.teamversus= 	"2"
+menu.itemname.teamcoop= 	""
+menu.itemname.survival= 	""
+menu.itemname.survivalcoop= 	""
+menu.itemname.training= 	"3"
+menu.itemname.watch= 	"4"
+menu.itemname.options= 	"5"
+menu.itemname.exit= 	"6"
+menu.window.margins.y= 	1280,0
+menu.window.visibleitems= 	1
+menu.boxcursor.visible= 	0
+menu.boxcursor.coords= 	0,0,0,0
+cursor.move.snd= 		100,0
+cursor.done.snd= 		100,1
+cancel.snd= 		100,2
+
+;-------------------------------------------------------------------
+[TitleBGdef]
+bgclearcolor= 	0,0,0
+
+[TitleBG Red]
+type= 		normal
+spriteno= 	0,1
+tile=		1,1
+
+[TitleBG Orange]
+type= 		anim
+actionno= 	1
+tile=		1,1
+tilespacing=	64,64
+
+[TitleBG Scanlines]
+type= 		anim
+actionno=		3
+tile= 		1,1
+tilespacing= 	100,100
+
+[TitleBG MenuShine]
+type= 		normal
+spriteno= 	0,5
+tile= 		1,0
+velocity= 	-30,0
+window= 		0,520,1279,719
+mask=		1
+
+[TitleBG MenuEffect]
+type= 		normal
+spriteno= 	0,6
+sin.x=		20,360
+start= 		-660,523
+mask= 		1
+
+[TitleBG Scroller1]
+type=		normal
+spriteno= 	0,4
+start= 		-50,0
+tile= 		1,0
+velocity= 	1,0
+window= 		0,0,1279,230
+mask=		1
+
+[TitleBG Scroller2]
+type=		normal
+spriteno= 	0,4
+start= 		50,0
+tile= 		1,0
+velocity= 	-1,0
+window= 		0,230,1279,719
+mask=		1
+
+[TitleBG Logo]
+type= 		anim
+actionno= 	2
+start=		0,215
+
+[TitleBG BlackBack]
+type= 		anim
+actionno= 	5
+tile=		1,1
+tilespacing=	30,30
+window=		0,415,1279,719
+
+[TitleBG Black]
+type= 		normal
+spriteno= 	0,3
+layerno= 		1
+tile= 		1,0
+start= 		0,689
+
+[TitleBG Transition1]
+type= 		normal
+spriteno= 	2,0
+layerno= 		1
+velocity= 	-30,0
+start=		-639,0
+mask=		1
+
+[TitleBG Transition2]
+type= 		normal
+spriteno= 	2,1
+layerno= 		1
+velocity= 	30,0
+start= 		-639,0
+mask= 		1
+
+[TitleBG Transition3]
+type= 		anim
+actionno= 	4
+layerno= 		1
+tile= 		1,1
+tilespacing= 	30,30
+window= 		0,419,1279,719
+
+;-------------------------------------------------------------------
+[Infobox]
+text.font=	-1,0,1
+
+[Infobox Text]
+
+[ja.Infobox Text]
+
+;-------------------------------------------------------------------
+[Select Info]
+fadein.time= 			0
+fadeout.time= 			10
+rows= 				13
+columns= 				26
+wrapping= 			0
+pos= 				14,410
+showemptyboxes= 			0
+moveoveremptyboxes= 		0
+cell.size= 			76,30
+cell.spacing= 			8
+cell.bg.spr= 			-1,0
+cell.random.spr= 			3,3
+cell.random.switchtime= 		4
+p1.cursor.startcell= 		0,3
+p1.cursor.active.spr= 		3,4
+p1.cursor.done.spr= 		3,6
+p1.cursor.move.snd= 		100,0
+p1.cursor.done.snd= 		100,1
+p1.random.move.snd= 		100,0
+p2.cursor.startcell= 		0,11
+p2.cursor.active.spr= 		3,5
+p2.cursor.done.spr= 		3,7
+p2.cursor.blink= 			0       
+p2.cursor.move.snd= 		100,0
+p2.cursor.done.snd= 		100,1
+p2.random.move.snd= 		100,0
+random.move.snd.cancel= 		0
+stage.move.snd= 			100,0
+stage.done.snd= 			100,1
+cancel.snd= 			100,2
+portrait.spr= 			9000,0
+portrait.offset= 			0,0
+portrait.scale= 			.25,.25
+title.font= 			3,0,1
+p1.face.spr= 			9000,1
+p1.face.offset= 			0,73
+p1.face.scale= 			.25,.25
+p1.face.facing= 			1
+p1.face.window= 			0,73,639,404
+p2.face.spr= 			9000,1
+p2.face.offset= 			1279,73
+p2.face.scale= 			.25,.25
+p2.face.facing= 			-1
+p2.face.window= 			640,73,1279,404
+p1.name.offset= 			20,469
+p1.name.font= 			2,0,1;,255,232,51
+p1.name.spacing= 			0,29
+p2.name.offset= 			1260,469
+p2.name.font= 			2,0,-1;,255,232,51
+p2.name.spacing= 			0,29
+stage.pos= 			640,708
+stage.active.font= 			7,0,0,255,232,51
+stage.active2.font= 		7,0,0,255,232,51
+stage.done.font= 			7,0,0,255,232,51
+teammenu.move.wrapping= 		1
+p1.teammenu.pos= 			45, 167
+p1.teammenu.selftitle.font= 		-1,0,0
+p1.teammenu.selftitle.text= 		""
+p1.teammenu.enemytitle.font= 		-1,0,0
+p1.teammenu.enemytitle.text= 		""
+p1.teammenu.move.snd= 		100,0
+p1.teammenu.value.snd= 		100,0
+p1.teammenu.done.snd= 		100,1
+p1.teammenu.item.offset= 		0,0
+p1.teammenu.item.spacing= 		0,0
+p1.teammenu.item.font= 		-1,0,1
+p1.teammenu.item.active.font= 	4,0,1
+p1.teammenu.item.active2.font= 	4,0,1
+p1.teammenu.item.cursor.anim= 	-1
+p1.teammenu.value.icon.offset= 	223,117
+p1.teammenu.value.icon.spr= 		3,8
+p1.teammenu.value.empty.icon.spr= 	-1,0
+p1.teammenu.value.spacing= 		36,0
+p2.teammenu.pos= 			1235,167
+p2.teammenu.selftitle.font= 		-1,0,0
+p2.teammenu.selftitle.text= 		""
+p2.teammenu.enemytitle.font= 		-1,0,0
+p2.teammenu.enemytitle.text= 		""
+p2.teammenu.move.snd= 		100,0
+p2.teammenu.value.snd= 		100,0
+p2.teammenu.done.snd= 		100,1
+p2.teammenu.item.offset= 		0,0
+p2.teammenu.item.spacing= 		0,0
+p2.teammenu.item.font= 		-1,0,-1
+p2.teammenu.item.active.font= 	5,0,-1
+p2.teammenu.item.active2.font= 	5,0,-1
+p2.teammenu.item.cursor.anim= 	-1
+p2.teammenu.value.icon.offset= 	-222,117
+p2.teammenu.value.icon.spr= 		3,9
+p2.teammenu.value.empty.icon.spr=	-1,0
+p2.teammenu.value.spacing= 		-36,0
+
+;-------------------------------------------------------------------
+[SelectBGdef]
+
+[SelectBG Red]
+type= 		normal
+spriteno= 	0,1
+tile=		1,1
+
+[SelectBG Orange]
+type= 		anim
+actionno= 	1
+tile=		1,1
+tilespacing=	64,64
+
+[SelectBG TitleShine]
+type= 		normal
+spriteno= 	0,5
+tile= 		1,0
+velocity= 	-30,0
+window= 		0,0,1279,65
+mask=		1
+
+[SelectBG GridShine]
+type= 		normal
+spriteno= 	0,5
+tile= 		1,0
+velocity= 	-30,0
+window= 		0,410,1279,719
+mask=		1
+
+[SelectBG Scanlines]
+type= 		anim
+actionno= 	3
+tile= 		1,1
+tilespacing= 	100,100
+
+[SelectBG BlackBack]
+type= 		anim
+actionno= 	5
+tile=		1,1
+tilespacing=	30,30
+window=		0,405,1279,719
+
+[SelectBG Black]
+type= 		normal
+spriteno= 	3,0
+mask=		1
+
+[SelectBG Scroller1]
+type=		normal
+spriteno= 	3,2
+start= 		-50,0
+tile= 		1,0
+velocity= 	1,0
+window= 		0,0,1279,230
+mask=		1
+
+[SelectBG Scroller2]
+type=		normal
+spriteno= 	3,2
+start= 		50,0
+tile= 		1,0
+velocity= 	-1,0
+window= 		0,230,1279,719
+mask=1
+
+[SelectBG Bars]
+type= 		normal
+spriteno= 	3,1
+layerno= 		1
+tile= 		1,0
+mask= 		1
+
+[SelectBG Transition1]
+type= 		normal
+spriteno= 	2,0
+layerno= 		1
+velocity= 	-30,0
+start=		-639,0
+mask=		1
+
+[SelectBG Transition2]
+type= 		normal
+spriteno= 	2,1
+layerno= 		1
+velocity= 	30,0
+start= 		-639,0
+mask= 		1
+
+[SelectBG Transition3]
+type= 		anim
+actionno= 	4
+layerno= 		1
+tile= 		1,1
+tilespacing= 	30,30
+window= 		0,0,1279,70
+
+[SelectBG Transition4]
+type= 		anim
+actionno= 	4
+layerno= 		1
+tile= 		1,1
+tilespacing= 	30,30
+window= 		0,405,1279,719
+
+;-------------------------------------------------------------------
+[VS Screen]
+time= 		600
+fadein.time= 	0
+fadeout.time= 	25
+match.text= 	"BATTLE #%i"
+match.offset= 	1249,58
+match.font= 	7,0,-1,255,232,51
+p1.spr= 		9000,1
+p1.offset=  	0,73
+p1.facing= 	1
+p1.scale= 	.25,.25
+p1.window= 	0,73,639,569
+p2.spr= 		9000,1
+p2.offset= 	1279,73
+p2.facing= 	-1
+p2.scale= 	.25,.25
+p2.window= 	640,73,1279,569
+p1.name.offset= 	29,629
+p1.name.font= 	6,0,1,255,232,51
+p1.name.spacing= 	0,72
+p2.name.offset= 	1150,629
+p2.name.font= 	6,0,-1,255,232,51
+p2.name.spacing= 	0,72
+
+;-------------------------------------------------------------------
+[VersusBGdef] 
+
+[VersusBG Red]
+type= 		normal
+spriteno= 	0,1
+tile=		1,1
+
+[VersusBG Orange]
+type= 		anim
+actionno= 	1
+tile=		1,1
+tilespacing=	64,64
+
+[VersusBG Scanlines]
+type= 		anim
+actionno= 	3
+tile= 		1,1
+tilespacing= 	100,100
+
+[VersusBG TitleShine]
+type= 		normal
+spriteno= 	0,5
+tile= 		1,0
+velocity= 	-30,0
+window= 		0,0,1279,65
+mask=		1
+
+[VersusBG Black]
+type= 		normal
+spriteno= 	4,0
+mask=		1
+
+[VersusBG Scroller1]
+type=		normal
+spriteno= 	4,2
+start= 		-50,0
+tile= 		1,0
+velocity= 	1,0
+window= 		0,0,1279,230
+mask=		1
+
+[VersusBG Scroller2]
+type=		normal
+spriteno= 	4,2
+start= 		50,0
+tile= 		1,0
+velocity= 	-1,0
+window= 		0,230,1279,719
+mask=		1
+
+[VersusBG Bars]
+type= 		normal
+spriteno= 	4,1
+layerno= 		1
+tile= 		1,0
+mask= 		1
+
+[VersusBG VS]
+type= 		anim
+actionno= 	6
+layerno= 		1
+start= 		0,360
+
+[VersusBG Ready]
+type= 		anim
+actionno= 	7
+layerno= 		1
+
+[VersusBG Transition1]
+type= 		normal
+spriteno= 	2,0
+layerno= 		1
+velocity= 	-30,0
+start=		-639,0
+mask=		1
+
+[VersusBG Transition2]
+type= 		normal
+spriteno= 	2,1
+layerno= 		1
+velocity= 	30,0
+start= 		-639,0
+mask= 		1
+
+[VersusBG Transition3]
+type= 		anim
+actionno= 	4
+layerno= 		1
+tile= 		1,1
+tilespacing= 	30,30
+window= 		0,0,1279,70
+
+[VersusBG Transition4]
+type= 		anim
+actionno= 	4
+layerno= 		1
+tile= 		1,1
+tilespacing= 	30,30
+window= 		0,575,1279,719
+
+;-------------------------------------------------------------------
+[Demo Mode]
+enabled = 	0
+
+;-------------------------------------------------------------------
+[Continue Screen]
+enabled= 		1
+pos= 		640,720
+continue.text= 	""
+continue.font= 	-1,0,0
+yes.text= 	""
+yes.font= 	-1,0,0
+yes.active.text= 	"8"
+yes.active.font= 	6,0,0
+no.text= 		""
+no.font= 		-1,0,0
+no.active.text= 	"9"
+no.active.font= 	6,0,0
+
+;-------------------------------------------------------------------
+[Game Over Screen]
+enabled = 	0
+
+;-------------------------------------------------------------------
+[Victory Screen]
+enabled= 		1
+time= 		900
+fadein.time= 	0
+fadeout.time= 	15
+p1.offset= 	0,73
+p1.spr= 		9000,2
+p1.facing= 	1
+p1.scale= 	.25,.25
+p1.window= 	0,73,1279,569
+p1.name.offset= 	1138,58
+p1.name.font= 	7,0,-1,255,232,51
+winquote.text= 	"Winner!"
+winquote.offset= 	38,620
+winquote.font= 	7,0,1,255,232,51
+winquote.window= 	38,122,1241,720
+winquote.textwrap =	w
+
+;-------------------------------------------------------------------
+[VictoryBGdef] 
+
+[VictoryBG Red]
+type= 		normal
+spriteno=		0,1
+tile=		1,1
+
+[VictoryBG Orange]
+type= 		anim
+actionno= 	1
+tile=		1,1
+tilespacing=	64,64
+
+[VictoryBG Scanlines]
+type= 		anim
+actionno= 	3
+tile= 		1,1
+tilespacing= 	100,100
+
+[VictoryBG TitleShine]
+type= 		normal
+spriteno= 	0,5
+tile= 		1,0
+velocity= 	-30,0
+window= 		0,0,1279,65
+mask=		1
+
+[VictoryBG Black]
+type= 		normal
+spriteno= 	5,0
+mask=		1
+
+[VictoryBG Scroller1]
+type=		normal
+spriteno= 	4,2
+start= 		-50,0
+tile= 		1,0
+velocity= 	1,0
+window= 		0,0,1279,230
+mask=		1
+
+[VictoryBG Scroller2]
+type=		normal
+spriteno= 	4,2
+start= 		50,0
+tile= 		1,0
+velocity= 	-1,0
+window= 		0,230,1279,719
+mask=		1
+
+[VictoryBG Bars]
+type= 		normal
+spriteno= 	4,1
+layerno= 		1
+tile= 		1,0
+mask= 		1
+
+[VictoryBG Transition1]
+type= 		normal
+spriteno= 	2,0
+layerno= 		1
+velocity= 	-30,0
+start=		-640,0
+mask=		1
+
+[VictoryBG Transition2]
+type= 		normal
+spriteno= 	2,1
+layerno= 		1
+velocity= 	30,0
+start= 		-640,0
+mask= 		1
+
+[VictoryBG Transition3]
+type= 		anim
+actionno= 	4
+layerno= 		1
+tile= 		1,1
+tilespacing= 	30,30
+window= 		0,0,1279,70
+
+[VictoryBG Transition4]
+type= 		anim
+actionno= 	4
+layerno= 		1
+tile= 		1,1
+tilespacing=	30,30
+window= 		0,575,1279,719
+
+;-------------------------------------------------------------------
+[Win Screen]
+enabled=			1
+wintext.text= 		"7"
+wintext.font= 		1,0,1
+wintext.offset= 		0,719
+wintext.displaytime= 	-1
+wintext.layerno= 		2
+fadein.time= 		32
+pose.time= 		300
+fadeout.time= 		128
+
+;-------------------------------------------------------------------
+[Default Ending]
+enabled=	0
+
+;-------------------------------------------------------------------
+[End Credits]
+enabled=	0
+
+;-------------------------------------------------------------------
+[Survival Results Screen]
+enabled=	0
+
+;-------------------------------------------------------------------
+[Option Info]
+fadein.time= 	0
+fadeout.time= 	10
+title.offset= 	640,40
+title.font= 	8,0,0
+cursor.move.snd= 	100,0
+cursor.done.snd= 	100,1
+cancel.snd= 	100,2
+
+;-------------------------------------------------------------------
+[OptionBGdef] 
+
+[OptionBG Red]
+type= 		normal
+spriteno= 	0,1
+tile=		1,1
+
+[OptionBG Orange]
+type= 		anim
+actionno= 	1
+tile=		1,1
+tilespacing=	64,64
+
+[OptionBG Scanlines]
+type= 		anim
+actionno= 	3
+tile= 		1,1
+tilespacing= 	100,100
+
+[OptionBG Black]
+type= 		normal
+spriteno= 	0,3
+tile= 		1,1
+window= 		276,0,1003,719
+
+[OptionBG Bars]
+type= 		normal
+spriteno= 	1,0
+tile= 		0,1
+mask= 		1
+
+[OptionBG Scroller1]
+type=		normal
+spriteno= 	1,1
+start= 		0,-50
+tile= 		0,1
+velocity= 	0,1
+window= 		0,0,639,719
+mask=		1
+
+[OptionBG Scroller2]
+type=		normal
+spriteno= 	1,1
+start= 		0,50
+tile= 		0,1
+velocity= 	0,-1
+window= 		639,0,1279,719
+mask=		1
+
+[OptionBG Transition1]
+type= 		normal
+spriteno= 	2,0
+layerno= 		1
+velocity= 	-30,0
+start=		-639,0
+mask=		1
+
+[OptionBG Transition2]
+type= 		normal
+spriteno= 	2,1
+layerno= 		1
+velocity= 	30,0
+start= 		-639,0
+mask= 		1
+
+[OptionBG Transition3]
+type= 		anim
+actionno= 	4
+layerno=		1
+tile= 		1,1
+tilespacing=	30,30
+window= 		279,0,999,719
+
+;-------------------------------------------------------------------
+;Orange BG Overlay
+[Begin Action 1]
+0,2,0,0,1170,,AS0D256
+interpolate blend
+0,2,0,0,30,,AS256D0
+0,2,0,0,1170,,AS256D0
+interpolate blend
+0,2,0,0,30,,AS0D256
+
+;Logo Pulse
+[Begin Action 2]
+0,0,0,0,59,,,1,1
+interpolate scale
+0,0,0,0,1,,,.98,.98
+0,0,0,0,59,,,.98,.98
+interpolate scale
+0,0,0,0,1,,,1,1
+
+;Scanlines
+[Begin Action 3]
+0,7,0,0,119,,AS128D128
+interpolate blend
+0,7,0,0,1,,AS128D256
+0,7,0,0,119,,AS128D256
+interpolate blend
+0,7,0,0,1,,AS128D128
+
+;Transition Reveal
+[Begin Action 4]
+0,3,0,0,60
+0,3,0,0,60,,AS256D0
+interpolate blend
+0,3,0,0,-1,,AS0D256
+
+;Dark BG
+[Begin Action 5]
+0,3,0,0,239,,AS64D196
+interpolate blend
+0,3,0,0,15,,AS128D128
+0,3,0,0,29,,AS128D128
+interpolate blend
+0,3,0,0,1,,AS64D196
+
+;VS Appears
+[begin action 6]
+-1,0,0,0,150
+4,3,0,0,30,,AS0D256,10,10
+interpolate scale
+interpolate blend
+4,3,0,0,15,,AS256D0,1,1
+loopstart
+4,3,0,0,59,,,1,1
+interpolate scale
+4,3,0,0,1,,,.98,.98
+4,3,0,0,59,,,.98,.98
+interpolate scale
+4,3,0,0,1,,,1,1
+
+;Get Ready
+[Begin Action 7]
+-1,0,0,0,195
+4,4,0,-50,30,,AS0D256
+interpolate offset
+interpolate blend
+4,4,0,0,-1,,AS256D0

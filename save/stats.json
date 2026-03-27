@@ -1,0 +1,49 @@
+{
+  "modes": {
+    "arcade": {
+      "playtime": 13.61,
+      "clear": 2,
+      "clearcount": {
+        "vegito (ssb)/vegito (ssb)1.def": 2
+      },
+      "ranking": [
+        {
+          "score": 135500,
+          "time": 9.33,
+          "name": "A",
+          "chars": [
+            "vegito (ssb)/vegito (ssb)1.def"
+          ],
+          "tmode": 0,
+          "ailevel": 5,
+          "win": 1,
+          "lose": 0,
+          "consecutive": 1
+        },
+        {
+          "score": 50100,
+          "time": 2.38,
+          "name": "BAG???????A ",
+          "chars": [
+            "vegito (ssb)/vegito (ssb)1.def"
+          ],
+          "tmode": 0,
+          "ailevel": 5,
+          "win": 1,
+          "lose": 0,
+          "consecutive": 1
+        }
+      ]
+    },
+    "training": {
+      "playtime": 0
+    },
+    "freebattle": {
+      "playtime": 3.4
+    },
+    "watch": {
+      "playtime": 189.55
+    }
+  },
+  "playtime": 206.56
+}

@@ -1,0 +1,14 @@
+[info]
+name = "combo"
+author = "devon"
+
+[FNT v2]
+fntversion = 2,00
+name = "combo"
+
+[Def]
+Type = bitmap
+Size = 40,59
+Spacing = 0,0
+Offset = 0,0
+File = combo.sff
